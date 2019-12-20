@@ -35,8 +35,8 @@ app.post('/uploads', async (req, res, next) => {
     }
 })
 
-app.put('/delete', async (req, res, next) => {
-    console.log(req.body.imgname)
+app.delete('/delete', async (req, res, next) => {
+    console.log(req.query.imgname)
 
     const { Storage } = require('@google-cloud/storage')
     const path = require('path')
