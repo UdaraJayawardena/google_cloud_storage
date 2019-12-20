@@ -1,0 +1,12 @@
+{
+	"type": "service_account",
+	"project_id": "effective-cacao-260014",
+	"private_key_id": "45b6dde01b3ffb042de042ffccb9daf9bf3a35b5",
+	"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCioGMe2Oa+c4U1\nx/cpQmm5efnHhlbD45kWk7W6X3yiUappIB3SLEaarWaq4jQfkhFimDco0uukwBoO\ntmCl4/5u3ff/DsZiIgmzovOCCltSIHmYiKIze+baiDdqrio/HIvz057ALJJJ8y5g\ni9+igLisOE6RQ1bcu1P4imq+YEtqKNuDxi97lPr/ZP44nyXeB0EGTGYkSJ9MjwJp\nTZCfxnx/9dlie8/MWhmByMjMoofqEdvZbed03WtvG2xBaK5D20RVaaNPlqxTo60A\nmz8588BPSq6kjVAhr2aiPx37c7uLXfyU74jtTla3PpbYYe3SXC0hjYwmymY811NB\nSrLq2wb/AgMBAAECggEAFA0+livHAliau4TfvstHie0LlURv0lDFLCQjq3U2mDUF\nlAINFesLpurBK/TJhH2tfcCoRx+qmnJtRBR3Wj0AaYnI7ZP+y1Qdv3PUyTCfDe30\neuWYn6HOrHH7Pet3ngyBB8a3XkP1+FREYEx0KJntK0mjYQSH40jdvll4IT0c+gZu\niwozxWJvyMH2Yw8dhhQhQx/QmSEvCA0QAxSiSWeCRqiJLUwZ/QNfu7MOno+kHVSH\nW+IM6jZm2s8OTJ2mwY+ecDEFp8zCcExE/xCestFwXLQwtCxXCJc5mbYnGWZHfH0U\nl4qBiLHIe+KRTSOyaz7W8BWh0VnuET3udY12su7gcQKBgQDajpvy9LsrQ9i5pVG/\n1rlU7GeIRd1VeNveS0VLMOkczpsBeIiZ8wSvvUS1yDJeCJypEe5N3dt6vqeRed0N\n0PpNGG7OWEbQKK2wIIJjjp8sSTF4reoUkj7luYKiPuTSUTNztACa3m2nKOp3pF1F\ncQjevd7ZvqbvG9DoN+mkrI2dYwKBgQC+fMwpZ6Da43kzwJmlT0BXdV/cAF3O+Q8I\nqAMotUlZ6/Arbdk2cn9l3l0DOzy8Ns5TWt+8WH3ncUNj93gW1Q40pCCvOBMx3KUu\nuCuvD0nq0vLVLapVRsxfAJwvjGcB+iHiIn+XbTOmx8jxfKQA+K0lfgBfWfmJ6P4l\n/UeTlbZAtQKBgDU3wHV6bhDs5lreDHff+yTYo6UlDe4ADdmlDmxurnSbQlcrWGfU\nKvH37kEtTEZlZnAss5A2U3kh73+W4uK4Xhpjtqd8C1IodZKLd/RyCAQqlmdCQdtc\neQBLGaoUEne72gF0dSlAvAaWCfG0DhoYmgZSyW7P46oZZdcFtliow5rtAoGAHhJB\ngL/VSvjiJ2NeXhR2ydfDvE1qgcQbtXggl4qW+9UdYx3CTrAgoIpMELiHTAcy50HP\nVEJ8Dc95ngxxLtmPlovahQ7LKPH2ObvlWYuGVcXbg//jhfbZSJ4mCfOWR1+ffb2I\nevVIVCnx9P2CPo0DeIm9sU/Y7waTKJgldo0J6okCgYAyGBvsZtSR+jtzI1JGT9RK\n3iaB6HbxtSN5bjqk8AB+PfDaMu1bbEtZABjzwlrxaYjyrin12pBqnqUOjkkbAdaO\nob/gcyGZYHJCBgVH/EPvZpcHL8UejV5fJvHzFmYaeZVkHOmmzgylRlj8kqXzESy8\nhT0N0zM+//Wtn/VS4w/qpg==\n-----END PRIVATE KEY-----\n",
+	"client_email": "smanala-taxi@effective-cacao-260014.iam.gserviceaccount.com",
+	"client_id": "115460008989862020159",
+	"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+	"token_uri": "https://oauth2.googleapis.com/token",
+	"auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+	"client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/smanala-taxi%40effective-cacao-260014.iam.gserviceaccount.com"
+}
