@@ -40,6 +40,7 @@ app.post('/uploads', async (req, res, next) => {
             })
 
     } catch (error) {
+        res.json('failed');
         next(error)
     }
 })
@@ -63,10 +64,10 @@ app.delete('/delete', async (req, res, next) => {
             .file(req.query.imgname)
             .delete();
 
+        res.json('success');
     } catch (error) {
-        console.log(error)
+        res.json(error.errors[0].message);
     }
-    res.json('success');
 })
 
 app.use((err, req, res, next) => {
