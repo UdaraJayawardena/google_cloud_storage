@@ -11,6 +11,7 @@ const gc = new Storage({
     keyFilename: serviceKey,
     projectId: 'effective-cacao-260014',
 })
+ 
 
 const bucket = gc.bucket('samanala_taxi_app')
 
