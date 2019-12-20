@@ -33,6 +33,8 @@ app.post('/uploads', async (req, res, next) => {
         console.log(myFile);
         const imageUrl = await uploadImage(myFile)
 
+        console.log(imageUrl)
+
         res.status(200)
             .json({
                 message: "success",
