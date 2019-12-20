@@ -41,7 +41,7 @@ app.post('/uploads', async (req, res, next) => {
 
     } catch (error) {
         res.json('failed');
-        next(error)
+        // next(error)
     }
 })
 
