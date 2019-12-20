@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const multer = require('multer')
 const uploadImage = require('./helpers/helpers')
+var cors = require('cors');
 
 const app = express()
 
@@ -16,7 +17,6 @@ app.disable('x-powered-by')
 app.use(multerMid.single('file'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-
 
 app.use(cors({ credentials: true, origin: true }))
 
