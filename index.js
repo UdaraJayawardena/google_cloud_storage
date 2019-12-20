@@ -21,11 +21,12 @@ app.post('/uploads', async (req, res, next) => {
 
     try {
         const myFile = req.file
+        console.log(myFile);
         const imageUrl = await uploadImage(myFile)
 
         res.status(200)
             .json({
-                message: "Upload was successful",
+                message: "success",
                 data: imageUrl
             })
 
@@ -50,13 +51,13 @@ app.put('/delete', async (req, res, next) => {
     try {
         await storeName
             .bucket('samanala_taxi_app')
-            .file(req.body.imgname)
+            .file(req.query.imgname)
             .delete();
 
     } catch (error) {
         console.log(error)
     }
-    res.json('successfully deleted');
+    res.json('success');
 })
 
 app.use((err, req, res, next) => {
