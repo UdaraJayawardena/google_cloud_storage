@@ -26,13 +26,18 @@ app.all('/', function (req, res, next) {
     next();
 });
 
-app.post('/uploads', async (req, res, next) => {
+app.post('/uploads', (req, res, next) => {
+    this.upload(req, res)
+})
 
+this.upload = async (req, res) => {
     try {
         const myFile = req.file
 
-        const imageUrl = await uploadImage(myFile)
         
+        const imageUrl = await uploadImage(myFile)
+        console.log(imageUrl)
+
         res.status(200)
             .json({
                 message: "success",
@@ -43,16 +48,18 @@ app.post('/uploads', async (req, res, next) => {
         res.json('failed');
         // next(error)
     }
+}
 
-
+app.delete('/delete', (req, res, next) => {
+    this.remove(res, req);
 })
 
-app.delete('/delete', async (req, res, next) => {
-    console.log(req.query.imgname)
-
+this.remove = async (res, req) => {
     const { Storage } = require('@google-cloud/storage')
     const path = require('path')
     const serviceKey = path.join(__dirname, 'config\\keys.json')
+
+    console.log(req.query.imgname)
 
     const storeName = new Storage({
         keyFilename: serviceKey,
@@ -70,7 +77,7 @@ app.delete('/delete', async (req, res, next) => {
     } catch (error) {
         res.json(error.errors[0].message);
     }
-})
+}
 
 app.use((err, req, res, next) => {
     res.status(500).json({
