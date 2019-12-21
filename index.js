@@ -31,17 +31,19 @@ app.post('/uploads', (req, res, next) => {
 })
 
 this.upload = async (req, res) => {
+
     try {
         const myFile = req.file
 
-        
         const imageUrl = await uploadImage(myFile)
-        console.log(imageUrl)
+  
+
+        const URL = `https://storage.cloud.google.com/samanala_taxi_app/${myFile.originalname}`
 
         res.status(200)
             .json({
                 message: "success",
-                data: imageUrl
+                data: URL
             })
 
     } catch (error) {
