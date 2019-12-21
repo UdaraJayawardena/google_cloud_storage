@@ -21,7 +21,8 @@ const uploadImage = (file) => new Promise((resolve, reject) => {
 
     const blob = bucket.file(originalname.replace(/ /g, "_"))
     const blobStream = blob.createWriteStream({
-        resumable: false
+        resumable: false,
+        gzip: true
 
     })
 
@@ -30,7 +31,7 @@ const uploadImage = (file) => new Promise((resolve, reject) => {
             // `https://storage.googleapis.com/${bucket.name}/${blob.name}`
             `https://console.cloud.google.com/storage/browser/${bucket.name}/${blob.name}`
         )
- 
+
 
         resolve(publicUrl)
     })
