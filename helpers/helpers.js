@@ -32,7 +32,6 @@ const uploadImage = (file) => new Promise((resolve, reject) => {
             `https://console.cloud.google.com/storage/browser/${bucket.name}/${blob.name}`
         )
 
-
         resolve(publicUrl)
     })
         .on('error', () => {
