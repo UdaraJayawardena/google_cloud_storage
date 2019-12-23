@@ -26,6 +26,10 @@ app.all('/', function (req, res, next) {
     next();
 });
 
+app.get('/sample', (req, res) => {
+    res.json('This is a Sample Message')
+})
+
 app.post('/uploads', (req, res, next) => {
     this.upload(req, res)
 })
